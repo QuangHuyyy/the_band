@@ -108,6 +108,7 @@ html {
 }
 
 #slider .text-heading {
+  font-weight: 400px;
   font-size: 24px;
 }
 
@@ -117,8 +118,59 @@ html {
 }
 
 #content {
-  height: 1000px;
 }
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin: 0 auto;
+}
+#content .section-heading{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+#content .section-sub-heading{
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-list{
+    margin-top: 47px;
+    margin-bottom: 48px;
+}
+#content .member-item{
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+}
+#content .clear{
+    clear: both;
+}
+/* #content .member-list:last-child::after{
+    content: "";
+    clear: both;
+} */
+
+#content .member-name{
+    font-size: 15px;
+    padding: 15px 0;
+}
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+
+
 
 #footer {
 }
