@@ -11,12 +11,63 @@
 html {
   font-family: Lato, sans-serif;
   font-size: 15px;
+  scroll-behavior: smooth;
 }
-
+/* Common */
 .text-white {
   color: #fff;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-full {
+  width: 100%;
+}
+
+.col-haft {
+  width: 50%;
+}
+.col-third {
+  width: 33.33333%;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  display: inline-block;
+  margin-top: 15px;
+  border: none;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.pull-right {
+  float: right;
+}
+/* APP */
 #wapper {
 }
 
@@ -127,6 +178,7 @@ html {
   width: 800px;
   padding: 64px 0;
   margin: 0 auto;
+  margin-bottom: 48px;
 }
 #content .section-heading {
   margin-top: 10px;
@@ -149,21 +201,12 @@ html {
   line-height: 1.4;
 }
 #content .member-list {
-  margin-top: 47px;
-  margin-bottom: 48px;
+  margin-top: 48px;
 }
-#content .member-item {
-  float: left;
-  text-align: center;
-  width: 33.33333%;
-}
+
 #content .clear {
   clear: both;
 }
-/* #content .member-list:last-child::after{
-    content: "";
-    clear: both;
-} */
 
 #content .member-name {
   font-size: 15px;
@@ -208,13 +251,8 @@ html {
   margin-top: -2px;
 }
 .tour-section .places-list {
-  margin: 32px -8px 48px;
-}
-
-.tour-section .place-item {
-  float: left;
-  width: 33.33333%;
-  padding: 0 8px;
+  margin-top: 32px;
+  margin-bottom: 48px;
 }
 
 .tour-section .place-img {
@@ -242,24 +280,6 @@ html {
 
 .tour-section .place-desc {
   line-height: 1.4;
-}
-
-.tour-section .place-buy-btn {
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 16px;
-  display: inline-block;
-  margin-top: 15px;
-  border: none;
-}
-
-.tour-section .place-buy-btn:hover {
-  color: #000;
-  background-color: #ccc;
-}
-
-#footer {
 }
 
 /* MODAL */
@@ -359,4 +379,53 @@ button#buy-tickets:hover {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+/* Contact */
+.contact-content {
+  margin-top: 48px;
+}
+.contact-content .contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contact-content .contact-info i {
+  padding: 0 8px;
+}
+.contact-content .contact-form {
+  font-size: 15px;
+}
+
+.contact-content .form-control {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/* Map section */
+
+.map-section img {
+  width: 100%;
+}
+/* Footer */
+
+#footer {
+  padding: 64px 8px;
+  text-align: center;
+}
+
+#footer .social-icon a {
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer .copy-right a:hover,
+#footer .social-icon a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copy-right {
+  margin-top: 32px;
+  font-style: 15px;
+  color: rgba(0, 0, 0, 0.6);
 }
